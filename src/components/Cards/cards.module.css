@@ -1,0 +1,79 @@
+.cards {
+  padding: 10px 0;
+  font-size: var(--text);
+}
+
+.card {
+  position: relative;
+  cursor: grab;
+  background-color: var(--secondary-background-color);
+  padding: 0.75rem;
+  border: 1px solid rgba(240, 240, 240, 10%);
+  border-radius: 10px;
+  > p {
+    font-weight: 500;
+    hyphens: none;
+    user-select: none;
+  }
+}
+.card:active {
+  cursor: grabbing;
+}
+
+.add-task-form {
+  textarea {
+    color: var(--text);
+    field-sizing: content;
+    background-color: rgb(51 46 68);
+    box-sizing: border-box;
+    font-size: var(--text);
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgb(167 139 250);
+    border-radius: 10px;
+    height: auto;
+  }
+  textarea:focus {
+    outline-color: rgb(197 179 250);
+    outline-style: solid;
+    outline-width: 1px;
+  }
+  .task-actions {
+    direction: rtl;
+    padding: 0 0 10px;
+  }
+  button {
+    all: unset;
+    text-align: center;
+    width: 70px;
+    border-radius: 8px;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: rgb(115 115 115);
+  }
+  .add-button {
+    background-color: rgb(230, 230, 230);
+    color: var(--secondary-background-color);
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .add-button:not(:disabled) {
+    color: black;
+  }
+  .cancel-button {
+    background-color: var(--secondary-background-color);
+  }
+  .cancel-button:hover {
+    color: var(--text);
+  }
+}
+.show-add-task {
+  all: unset;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgb(115 115 115);
+  transition: all 250ms ease-in-out;
+}
+.show-add-task:hover {
+  color: var(--text);
+}

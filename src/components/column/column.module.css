@@ -1,0 +1,7 @@
+.column {
+  padding: 5px 20px;
+}
+.active {
+  backdrop-filter: brightness(120%);
+  border-radius: 10px;
+}

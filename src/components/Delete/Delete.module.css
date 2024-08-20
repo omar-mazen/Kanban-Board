@@ -1,0 +1,26 @@
+.delete {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 16px 0 0;
+  padding: 0.75rem;
+
+  background-color: rgba(154, 153, 153, 0.122);
+  border: 1px solid rgba(240, 240, 240, 10%);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+
+  position: relative;
+  .trash {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+    line-height: 0px;
+  }
+}

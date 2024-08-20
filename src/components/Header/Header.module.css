@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    font-size: var(--header);
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  span {
+    font-weight: 800;
+    color: rgb(115 115 115);
+  }
+}
